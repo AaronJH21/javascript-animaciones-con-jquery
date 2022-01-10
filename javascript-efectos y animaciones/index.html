@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartelera</title>
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body >
+   
+    <header>
+        <h1>Peliculas</h1>
+        <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+    </header>
+
+    <button id="ir">Ir a contacto</button>
+
+    <select id="selecGenero">
+        <option value="all">Todos</option>
+        <option value="Terror">Terror</option>
+        <option value="Accion y Ciencia Ficcion">Accion y ciencia ficcion</option>
+        <option value="Accion y Aventura">Accion y Aventura</option>
+    </select>
+
+    <main id="contenedor-productos">
+      
+    </main>
+
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <h3>Carrito</h3>
+            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <div id="carrito-contenedor">
+               
+            </div>
+            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+            <button id="fin" class="btn waves-effect waves-light">Finalizar compra</button>
+        </div>
+    </div>
+    
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <h3>Carrito</h3>
+            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <div id="carrito-contenedor">
+               
+            </div>
+            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+        </div>
+    </div>
+    
+    <div class="row" id="contacto">
+        <form class="col s12" id="formulario">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="Nombre" id="name" type="text" class="validate">
+                </div>
+                <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate" placeholder="Apellido">
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input  id="direccion" type="text" class="validate" placeholder="Direccion">
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="city" type="text" class="validate" placeholder="Localidad">
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="email" type="email" class="validate" placeholder="Email">
+                </div>
+            </div>
+            <button class="btn waves-effect waves-light" type="submit" id="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+              </button>
+        </form>
+    </div>
+    
+    <button id="izq">Izq</button>
+    <button id="der">Der</button>
+    <div class="block"></div>
+    
+   
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="stock.js"></script>
+    <script src="modal.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>
